@@ -1,110 +1,92 @@
-<link href="scss/all.css" rel="stylesheet" type="text/css">
+<link href="css/all.css" rel="stylesheet" type="text/css">
 
-<h2>self defined button</h2>
-<button>button</button>  original
-<hr/>
-<button class="btn">button</button>  original with class btn
-<hr/>
-<div class="btn">default</div>     div with class btn
-<hr/>
-<div class="btn btn-primary">primary</div>    div with class btn btn-primray
+<form>
+	<div class="login-form">
+		<svg class="user-icon" width="40" height="40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+			<ellipse cx="21" cy="17" rx="5.5" ry="5.98" fill="#990033" stroke="#990000" />
+			<ellipse cx="20" cy="16" rx="0" ry="0" fill="#993300" stroke="#990000" />
+			<ellipse cx="23" cy="15" rx="0" ry="0" fill="#993300" stroke="#990000" />
+			<ellipse cx="20" cy="16" rx="0" ry="0" fill="#0033FF" stroke="#990000" />
+			<rect x="14" y="21" width="14" height="11" fill="#663333" stroke="#990000" />
+		</svg>
+		<svg class="password-icon" width="40" height="40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+			<path d="M142.49,30.493C141.45,6.455,94.925,0.499,70.118,0.499 c-23.781,0-70.643,6.674-69.62,29.994c1.04,24.036,46.525,29.992,72.032,29.992C96.651,60.485,143.512,54.053,142.49,30.493z M79.768,55.718c-17.233,1.908-34.803-11.426-36.193-30.697c-1.022-14.042,4.825-18.09,19.31-19.756 c17.219-1.908,34.803,11.184,36.529,30.466C100.436,49.773,94.589,54.294,79.768,55.718z" transform="matrix(0.1830986,0,0,0.1833333,6.908451,11.90833)" fill="#FF0000" stroke="#990000" />
+			<rect x="5" y="19" width="30" height="12" fill="#996600" stroke="#990000" />
+		</svg>
+		<div class="login-input-username">
+			<input type="text" name="username"></input>
+		</div>
+		<div class="login-input-password">
+			<input type="password" name="password"></input>
+		</div>
+		<div for="login_submit" class="btn btn-primary">primary</div> 
+		<div for="login_reset" class="btn btn-primary">primary</div> 
+		<button id="login_submit" type="submit"></button>
+		<button id="login_reset" type="reset"></button>
+		<input type="submit" class="btn btn-primary">sadfasf</input>
+	</div>
+</form>
 
-<h2>self defined input</h2>
-<div>
-    <input></input>   original input
-</div>
-<hr/>
-<div class="form-group">
-    <input></input>   input with class form-group
-</div>
-<hr/>
-<div class="form-group has-error">
-    <input></input>   input with class form-group has-error
-</div>
-<hr/>
-<div class="form-group">
-    <input disabled="disabled"></input> disabled input with class form-group
-</div>
 
 
-<h2>self defined checkbox</h2>
-<div>
-    <input type="checkbox"></input>   original checkbox
-</div>
-<hr/>
-<div class="squaredFour">
-  <input type="checkbox" value="None" id="squaredFour" name="check" checked />
-  <label for="squaredFour"></label>
-</div>
 
-<h2>self defined radio</h2>
-    <input type="radio"/>
-<hr/>
-<div>
-  <input type="radio" id="radio01" name="radio" />
-  <label for="radio01"><span></span>Radio Button 1</label>
-</div>
 
-<div>
- <input type="radio" id="radio02" name="radio" />
- <label for="radio02"><span></span>Radio Button 2</label>
-</div>
 
-<!--<table>
-    <tr>
-        <td>
-            <div class="slideOne">  
-              <input type="checkbox" value="None" id="slideOne" name="check" checked />
-              <label for="slideOne"></label>
-            </div>
-        </td>
-        <td>
-            <div class="slideTwo">  
-              <input type="checkbox" value="None" id="slideTwo" name="check" checked />
-              <label for="slideTwo"></label>
-            </div>
-        </td>
-        <td>
-            <div class="slideThree">  
-              <input type="checkbox" value="None" id="slideThree" name="check" checked />
-              <label for="slideThree"></label>
-            </div>
-        </td>
-        <td>
-            <div class="roundedOne">
-              <input type="checkbox" value="None" id="roundedOne" name="check" checked />
-              <label for="roundedOne"></label>
-            </div>
-        </td>
-        <td>
-            <div class="roundedTwo">
-              <input type="checkbox" value="None" id="roundedTwo" name="check" checked />
-              <label for="roundedTwo"></label>
-            </div>
-        </td>
-        <td>
-            <div class="squaredOne">
-              <input type="checkbox" value="None" id="squaredOne" name="check" checked />
-              <label for="squaredOne"></label>
-            </div>
-        </td>
-        <td>
-            <div class="roundedTwo">
-              <input type="checkbox" value="None" id="roundedTwo" name="check" checked />
-              <label for="roundedTwo"></label>
-            </div>
-        </td>
-        <td>
-            <div class="squaredThree">
-              <input type="checkbox" value="None" id="squaredThree" name="check" checked />
-              <label for="squaredThree"></label>
-            </div>
-        </td>
-        <td>
-            <div class="squaredFour">
-              <input type="checkbox" value="None" id="squaredFour" name="check" checked />
-              <label for="squaredFour"></label>
-            </div>
-        </td>
-    </tr>
-</table>-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script type="text/javascript">
+$(function(){
+	// Returns width of browser viewport
+	$( window ).width();
+	// Returns width of HTML document
+	$( document ).width();
+	
+	$("body").css("padding-left",($(window).width() - $(".login-form").width())/2+"px");
+	$("body").css("padding-top",($(window).height() - $(".login-form").height())/2+"px");
+});
+</script>
