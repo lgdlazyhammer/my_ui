@@ -1,0 +1,51 @@
+@import 'variables';
+@import 'form-group';
+
+body{
+	background-color: $body-bg-formal;
+	margin: 0px;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.login-form{
+	width: 500px;
+	height: 330px;
+	border-radius: $border-radius-base;
+	background-color: $brand-secondary;
+	position: relative;
+}
+
+
+.login-input-username{
+	@extend .form-group;
+	font-size: $input-font-size-lg;
+	font-family: $font-family-demo;
+	position: absolute;
+	left: 240px;
+	top: 80px;
+}
+
+.login-input-password{
+	@extend .form-group;
+	font-size: $input-font-size-lg;
+	font-family: $font-family-demo;
+	position: absolute;
+	left: 240px;
+	top: 150px;
+}
+
+.user-icon{
+	position: absolute;
+	left: 140px;
+	top: 76px;
+}
+
+.password-icon{
+	position: absolute;
+	left: 144px;
+	top: 140px;
+}
+
+
+

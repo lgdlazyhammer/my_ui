@@ -4,7 +4,6 @@
 }
 
 .form-group input{
-    font-size: $component-font-size-base;
     border-radius: $border-radius-base;
     border-style: solid;
     border-color: $concrete;
@@ -15,7 +14,6 @@
 }
 
 .form-group.has-error input{
-    font-size: $component-font-size-base;
     border-radius: $border-radius-base;
     border-style: solid;
     border-color: $pomegranate;

@@ -1,4 +1,4 @@
-<link href="scss/all.css" rel="stylesheet" type="text/css">
+<link href="css/all.css" rel="stylesheet" type="text/css">
 
 <h2>self defined button</h2>
 <button>button</button>  original
@@ -37,12 +37,6 @@
   <label for="squaredFour"></label>
 </div>
 
-<h2>self defined togglebox</h2>
-<div class="slideOne">
-    <input type="checkbox" value="None" id="slideOne" name="check" checked />
-    <label for="slideOne"></label>
-</div>
-
 <h2>self defined radio</h2>
     <input type="radio"/>
 <hr/>
@@ -55,6 +49,57 @@
  <input type="radio" id="radio02" name="radio" />
  <label for="radio02"><span></span>Radio Button 2</label>
 </div>
+
+<h2>select onclick 事件</h2>
+<hr/>
+<h3>select onclick 事件 无value</h3>
+<select onchange="onSelectChangeSelectedIndex(this.options[this.options.selectedIndex].value),onSelectedChangeTitle(this.options[this.options.selectedIndex].value)" value="">
+  <option>Volvo</option>
+  <option>Saab</option>
+  <option>Mercedes</option>
+  <option>Audi</option>
+</select>
+
+<hr/>
+<h3>select onclick 事件 有 value</h3>
+<select onchange="onSelectChangeSelectedIndex(this.options[this.options.selectedIndex].value),onSelectedChangeTitle(this.options[this.options.selectedIndex].value)" value="">
+  <option value="1">Volvo</option>
+  <option value="2">Saab</option>
+  <option value="3">Mercedes</option>
+  <option value="4">Audi</option>
+</select>
+
+<h2>useless example</h2>
+<hr/>
+
+<div class="contract-container" style="cursor:hand;position:relative;font-size:0.5em;font-family:'Microsoft YaHei';">
+	<img alt="授信合同" src="/images/bght.png">
+    <div style="position:absolute;top:0px;text-align:center;width:100%;height:100%;margin-top:3em;">企业征信<br/>授权书</div>
+</div>
+
+
+<script src="http://lib.sinaapp.com/js/jquery/1.9.1/jquery-1.9.1.min.js"></script>
+
+<script>
+function onSelectChangeSelectedIndex(itemSelected){
+	this.selectedIndex = itemSelected;
+	console.log("selected index  " + this.selectedIndex);
+	
+}
+
+function onSelectedChangeTitle(itemSelected){
+	this.title = itemSelected;
+	console.log("selected title " + this.title);
+}
+</script>
+
+<script>
+	$(".contract-container").width($(".contract-container").children(":first").width());
+	$(".contract-container").height($(".contract-container").children(":first").height());
+	function previewContract(contractId){
+		alert("download contract " + contractId);
+	}
+</script>
 
 <!--<table>
     <tr>
