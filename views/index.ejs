@@ -1,7 +1,7 @@
 <link href="css/all.css" rel="stylesheet" type="text/css">
 
 <form>
-	<div class="login-form">
+	<div style="display:none;" class="login-form">
 		<svg class="user-icon" width="40" height="40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 			<ellipse cx="21" cy="17" rx="5.5" ry="5.98" fill="#990033" stroke="#990000" />
 			<ellipse cx="20" cy="16" rx="0" ry="0" fill="#993300" stroke="#990000" />
@@ -19,15 +19,24 @@
 		<div class="login-input-password">
 			<input type="password" name="password"></input>
 		</div>
-		<div for="login_submit" class="btn btn-primary">primary</div> 
-		<div for="login_reset" class="btn btn-primary">primary</div> 
-		<button id="login_submit" type="submit"></button>
-		<button id="login_reset" type="reset"></button>
-		<input type="submit" class="btn btn-primary">sadfasf</input>
+		<button class="btn login-submit" type="submit">submit</button>
+		<button class="btn login-reset" type="reset">reset</button>
 	</div>
 </form>
 
-
+<script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+<script type="text/javascript">
+$(function(){
+	$(".login-form").show();
+	// Returns width of browser viewport
+	$( window ).width();
+	// Returns width of HTML document
+	$( document ).width();
+	
+	$("body").css("padding-left",($( document ).width() - $(".login-form").width())/2+"px");
+	$("body").css("padding-top",($( document ).height() - $(".login-form").height())/2+"px");
+});
+</script>
 
 
 
