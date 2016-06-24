@@ -1,12 +1,12 @@
 .btn {
   font-size: 15px;
   display: inline;
+  border: none;
   border-radius: 4px;
   padding-left: 6px;
   padding-right: 6px;
   padding-top: 3px;
   padding-bottom: 3px;
-  background-color: #95a5a6;
   -webkit-touch-callout: none;
   /* iOS Safari */
   -webkit-user-select: none;
@@ -18,7 +18,12 @@
   -ms-user-select: none;
   /* Internet Explorer/Edge */
   user-select: none;
-  /* Non-prefixed version, currently*/ }
+  /* Non-prefixed version, currently*/
+  text-decoration: none;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none; }
 
 .btn-primary {
   background-color: #3498db; }
@@ -156,7 +161,7 @@ input[type="radio"]:checked + label span {
   background-color: #bdc3c7; }
 
 body {
-  background-color: rgba(245, 236, 17, 0.26);
+  background-color: rgba(17, 245, 136, 0.26);
   margin: 0px;
   vertical-align: middle;
   text-align: center; }
@@ -191,3 +196,17 @@ body {
   position: absolute;
   left: 144px;
   top: 140px; }
+
+.login-submit {
+  background-color: rgba(52, 219, 79, 0.61);
+  width: 100px;
+  position: absolute;
+  left: 144px;
+  top: 250px; }
+
+.login-reset {
+  background-color: rgba(52, 219, 79, 0.61);
+  width: 100px;
+  position: absolute;
+  left: 280px;
+  top: 250px; }

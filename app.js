@@ -25,8 +25,8 @@ app.set('view engine', 'ejs'); // use either jade or ejs
 // instruct express to server up static assets
 app.use(express.static(__dirname));
 // Set server port
-app.listen(8080);
-console.log('server is running on port 8080');
+app.listen(5000);
+console.log('server is running on port 5000');
 
 app.use('/', function(req, res) {
     res.render('index');
