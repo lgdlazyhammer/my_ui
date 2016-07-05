@@ -28,6 +28,10 @@ app.use(express.static(__dirname));
 app.listen(5000);
 console.log('server is running on port 5000');
 
-app.use('/', function(req, res) {
+app.use('/login', function(req, res) {
     res.render('index');
+});
+
+app.use('/register', function(req, res) {
+    res.render('register');
 });
