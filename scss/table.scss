@@ -1,0 +1,40 @@
+@import 'variables';
+@import 'form-group';
+
+table.table{
+    border-radius: $border-radius-base;
+    border-style: solid;
+    border-color: $brand-primary;
+    padding: $padding-default-horizental;
+}
+
+table tr.tr{
+}
+
+table tr th.th{
+    border-radius: $border-radius-base;
+    border-style: solid;
+    border-color: $brand-primary;
+    padding-left: $padding-default-vertical; 
+    padding-right: $padding-default-vertical;
+    padding-top: $padding-default-horizental;
+    padding-bottom: $padding-default-horizental;
+    background-color: $brand-primary;
+}
+
+table tr td.td{
+    padding-left: $padding-default-vertical; 
+    padding-right: $padding-default-vertical;
+}
+
+table tr td.td:hover{
+    color: $brand-warning;
+    transform:scale(1.3,1.3);
+    -ms-transform:scale(1.3,1.3); 	/* IE 9 */
+    -moz-transform:scale(1.3,1.3); 	/* Firefox */
+    -webkit-transform:scale(1.3,1.3); /* Safari 和 Chrome */
+    -o-transform:scale(1.3,1.3); 	/* Opera */
+}
+
+
+

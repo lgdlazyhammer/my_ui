@@ -35,3 +35,7 @@ app.use('/login', function(req, res) {
 app.use('/register', function(req, res) {
     res.render('register');
 });
+
+app.use('/users', function(req, res) {
+    res.render('users');
+});

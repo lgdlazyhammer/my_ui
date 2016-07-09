@@ -3,9 +3,9 @@
 
 body{
 	background-color: $body-bg-formal;
-	margin: 0px;
-	vertical-align: middle;
-	text-align: center;
+	font-family: $font-family-base;
+	padding-left: 50px !important;
+	padding-top: 50px !important;
 }
 
 .login-form{
@@ -61,6 +61,26 @@ body{
 	position: absolute;
 	left: 280px;
 	top: 250px;
+}
+
+.register_input{
+	@extend .form-group;
+	font-size: $input-font-size-lg;
+	font-family: $font-family-demo;
+}
+
+.register-submit{
+	background-color: rgba(52, 219, 79, 0.61);
+	width: 100px;
+}
+
+.register-reset{
+	background-color: rgba(52, 219, 79, 0.61);
+	width: 100px;
+}
+
+.float-left{
+	float: left;
 }
 
 
